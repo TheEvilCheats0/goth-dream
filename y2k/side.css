@@ -1,0 +1,31 @@
+/* Стили для боковой панели навигации */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #111;
+    padding-top: 50px; /* чтобы не перекрывался заголовок */
+    overflow-y: auto; /* разрешаем прокрутку, если пунктов меню слишком много */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    padding: 10px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.side-nav ul li a:hover {
+    background-color: #333;
+}

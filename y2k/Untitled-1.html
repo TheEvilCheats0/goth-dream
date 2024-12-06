@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готические Сны</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+function f(x) {
+    return (x ** 2 + 1) * Math.sin(x - 0.5);
+}
+
+function numericalIntegration(a, b, n) {
+    const h = (b - a) / n; // Шаг интегрирования
+    let integral = 0;
+
+    for (let i = 0; i < n; i++) {
+        const x0 = a + i * h;
+        const x1 = a + (i + 1) * h;
+
+        // Используем метод трапеций для оценки интеграла
+        integral += (f(x0) + f(x1)) * h / 2;
+    }
+
+    return integral;
+}
+
+const a = 0.5; // Нижний предел
+const b = 1.5; // Верхний предел
+const n = 5;   // Количество подынтервалов
+
+const result = numericalIntegration(a, b, n);
+console.log(result.toFixed(3)); // Выводим результат с точностью до 3 знаков после запятой
+</body>
+</html>

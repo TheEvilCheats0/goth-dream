@@ -1,0 +1,194 @@
+body {
+    background-color: #000000;
+    font-family: 'Garamond', serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('gothic_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav ul li a:hover {
+    border-color: #8b0000;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #8b0000;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #8b0000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-top: 2px solid #8b0000;
+}
+/* Стили для боковой панели навигации */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #111;
+    padding-top: 50px; /* чтобы не перекрывался заголовок */
+    overflow-y: auto; /* разрешаем прокрутку, если пунктов меню слишком много */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    padding: 10px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.side-nav ul li a:hover {
+    background-color: #333;
+}
+/* Стили для боковой панели навигации */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Положение по умолчанию - за пределами экрана */
+    height: 100%;
+    width: 200px;
+    background-color: #111;
+    padding-top: 50px; /* чтобы не перекрывался заголовок */
+    overflow-y: auto; /* разрешаем прокрутку, если пунктов меню слишком много */
+    transition: left 0.3s; /* добавляем плавный переход при изменении положения */
+}
+
+.side-nav.open {
+    left: 0; /* Положение при открытии панели */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    padding: 10px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.side-nav ul li a:hover {
+    background-color: #333;
+}
+body {
+    background-image: url('img/111111.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Стили для секции "Портфолио" */
+#portfolio {
+    padding: 50px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-description {
+    padding: 20px;
+}
+
+.portfolio-description h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.portfolio-description p {
+    color: #666;
+}
+
